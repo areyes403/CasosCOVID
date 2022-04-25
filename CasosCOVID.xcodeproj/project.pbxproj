@@ -13,6 +13,9 @@
 		48CFE9F12816E3330046A5E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CFE9EF2816E3330046A5E2 /* Main.storyboard */; };
 		48CFE9F32816E3340046A5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CFE9F22816E3340046A5E2 /* Assets.xcassets */; };
 		48CFE9F62816E3340046A5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CFE9F42816E3340046A5E2 /* LaunchScreen.storyboard */; };
+		48CFE9FF2816E6AD0046A5E2 /* CovidDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CFE9FE2816E6AD0046A5E2 /* CovidDatos.swift */; };
+		48CFEA032816E7E90046A5E2 /* CovidModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CFEA022816E7E90046A5E2 /* CovidModelo.swift */; };
+		48CFEA062816EA690046A5E2 /* CovidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CFEA052816EA690046A5E2 /* CovidManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		48CFE9F22816E3340046A5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48CFE9F52816E3340046A5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CFE9F72816E3340046A5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48CFE9FE2816E6AD0046A5E2 /* CovidDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDatos.swift; sourceTree = "<group>"; };
+		48CFEA022816E7E90046A5E2 /* CovidModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModelo.swift; sourceTree = "<group>"; };
+		48CFEA052816EA690046A5E2 /* CovidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				48CFE9F22816E3340046A5E2 /* Assets.xcassets */,
 				48CFE9F42816E3340046A5E2 /* LaunchScreen.storyboard */,
 				48CFE9F72816E3340046A5E2 /* Info.plist */,
+				48CFE9FE2816E6AD0046A5E2 /* CovidDatos.swift */,
+				48CFEA022816E7E90046A5E2 /* CovidModelo.swift */,
+				48CFEA052816EA690046A5E2 /* CovidManager.swift */,
 			);
 			path = CasosCOVID;
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CFEA032816E7E90046A5E2 /* CovidModelo.swift in Sources */,
 				48CFE9EE2816E3330046A5E2 /* ViewController.swift in Sources */,
+				48CFE9FF2816E6AD0046A5E2 /* CovidDatos.swift in Sources */,
+				48CFEA062816EA690046A5E2 /* CovidManager.swift in Sources */,
 				48CFE9EA2816E3330046A5E2 /* AppDelegate.swift in Sources */,
 				48CFE9EC2816E3330046A5E2 /* SceneDelegate.swift in Sources */,
 			);
