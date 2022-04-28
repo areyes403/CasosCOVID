@@ -12,11 +12,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tablaPaises: UITableView!
     var covidManager = CovidManager()
     
+    var paisAMandar: CovidDatos?
+    var paisesTabla:[CovidDatos] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //tablaPaises.register(UINib(nibName: "PaisCeldaTableViewCell", bundle: nil), forCellReuseIdentifier:"celda")
+        tablaPaises.register(UINib(nibName: "PaisCeldaTableViewCell", bundle: nil), forCellReuseIdentifier: "celda")
         tablaPaises.delegate = self
         tablaPaises.dataSource = self
-        // Do any additional setup after loading the view.
+        //covidManager.delegado = self
         covidManager.buscarEstadisticas()
     }
 
@@ -41,12 +46,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return paisesTabla.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tablaPaises.dequeueReusableCell(withIdentifier: "celda", for:indexPath)
-        celda.textLabel?.text="Mexico"
+        let celda = tablaPaises.dequeueReusableCell(withIdentifier: "celda", for:indexPath) as! PaisCeldaTableViewCell
+        
+        
+        
         celda.detailTextLabel?.text="10101"
         celda.imageView?.image = UIImage(systemName: "flag")
         return celda
