@@ -9,6 +9,11 @@ import UIKit
 
 class PaisCeldaTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var lblCasosRecuperadosCelda: UILabel!
+    @IBOutlet weak var lblNombrePaisCelda: UILabel!
+    @IBOutlet weak var lblCasosActivosCelda: UILabel!
+    @IBOutlet weak var imgCelda: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
