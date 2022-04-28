@@ -32,7 +32,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return paisesTabla.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 120
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,6 +65,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "verDetalle"{
             let objDestino = segue.destination as! VistaDetalladaViewController
+            objDestino.recibirPais = paisAMandar
             
         }
     }
